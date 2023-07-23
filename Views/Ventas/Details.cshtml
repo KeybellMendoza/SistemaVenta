@@ -1,0 +1,58 @@
+﻿@model SistemaVenta.Models.Venta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Venta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto_Pago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto_Pago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cambio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cambio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Registro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Registro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Documento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Documento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Venta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
